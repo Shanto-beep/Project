@@ -1,0 +1,97 @@
+<!--php code
+<?php
+  if(isset($_POST['login'])){
+  $UserName=$_POST['UserName'];
+  $Password=$_POST['Password'];
+
+  $mysqli=new mysqli("localhost","root","","sign_up2");
+  $result=$mysqli->query("SELECT * FROM information2 WHERE UserName='$UserName' AND Password='$Password'");
+  $row=$result->fetch-assoc();
+
+  if($row['UserName']==$UserName && $row['Password']==$Password){
+  	$message="Login Successful..!";
+  	echo "<script type='text/java script'>alert('$message');</script";
+  }else{
+  	$message="Login Unsuccessful..!";
+  	echo "<script type='text/java script'>alert('$message1');</script";
+  }
+}
+
+?>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>School</title>
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<!-- Owl Carousel css -->
+		<link rel="stylesheet" href="css/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="css/owl.theme.css" media="screen">
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="css/magnific-popup.css">
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/msresponsive.css">
+		<link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+
+	</head>
+	<body class="body-wrapper">
+		<div class="inner-body">
+			<!-- panel Starts -->
+			<section class="panel">
+				<div class="container">
+					<div class="panel-content">
+						<h4>Login</h4>
+					</div>
+				</div>
+			</section>
+			<!-- panel Ends -->
+
+			<!-- middle section starts -->
+			<section class="middle-section">
+				<div class="contact-info">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="cont-f">
+									<form action="login.php" method="post">
+									    <label for="fname">User Name</label>
+									    <input type="text" id="fname" name="firstname" placeholder="User name">
+
+									   <label for="exampleFormControlInput1">Password</label>
+									      <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
+									    <input type="submit" value="Login">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- middle section ends -->
+			<!-- jQuery -->
+			<script src="js/jquery-3.3.1.min.js"></script>
+			<!-- Bootstrap JavaScript -->
+			<script src="js/bootstrap.min.js"></script>
+			<!-- Owl Carousel JS -->
+			<script src="js/owl.carousel.js"></script>
+			<!-- Font Awesome JS -->
+			<script src="js/all.min.js"></script>	
+			<script src="js/main.js"></script>
+			<!-- Magnific Popup core JS file -->
+			<script src="js/jquery.magnific-popup.js"></script>
+		</div>
+	</body>
+</html>

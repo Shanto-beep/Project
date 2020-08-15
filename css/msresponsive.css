@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1199px){
+	body.body-wrapper {
+		width: 100%;
+		border: 0px;
+	}
+	.main-navigation.sticky { width: 100%; }
+	.main-navigation .navigation ul li.wrap { padding: 0 8px; }
+	.main-navigation .navigation ul li.wrap a { font-size: 15px; }
+	.breadcrumb-list ul.breadcrumb li.completed { width: 100px; }
+	.breadcrumb-list ul.breadcrumb li { padding: 0px 9px; }
+	.latestAndPopuler-News-tab .tab-header ul li { width: 144px; }
+	.latestAndPopuler-News-tab .tab-content .tab-pane .tab-post-list .tab-post-list-wrap .tab-border-btm {
+		width: 261px;
+	}
+	.about-wrap h4.tittle { line-height: normal; }
+	.about-wrap .about-info p {
+		font-size: 14px;
+		line-height: normal;
+		margin-bottom: 0px;
+	}
+	.about-wrap .about-info a.about-btn {
+	    font-size: 13px;
+	    padding: 1px 10px;
+	}
+}
+@media only screen and (max-width: 991px){
+	.main-navigation .navigation ul li.wrap { padding: 0 6px; }
+	.main-navigation .navigation ul li.wrap a { font-size: 11px;}
+	.top-section .top-ber .top-menu { text-align: left; }
+	.top-section .top-ber .top-menu ul li:first-child { padding-left: 0px; }
+	.latestAndPopuler-News-tab .tab-header ul li {width: 358px;}
+	.latestAndPopuler-News-tab .tab-content .tab-pane .tab-post-list .tab-post-list-wrap .tab-border-btm { width: 690px; }
+	.logo-loginTittle .logo-tittle { text-align: center; }
+	.school-tittle { margin: 0px; }
+	.login { text-align: center; }
+	.login a {
+		border: 1px solid #00aeef;
+		margin: 5px;
+	}
+	.corner-message .corner-carousel .item .item-content q { display: contents; }
+}
+@media only screen and (max-width: 800px){
+	.navbar-toggle {
+	    display: block;
+	}
+	.main-navigation .navigation { display: none; }
+}
+@media only screen and (max-width: 767px){
+	.logo-loginTittle .logo-tittle a .logo-image {
+	    width: 15vw;
+	    margin-right: 5px;
+	}
+	.logo-loginTittle .logo-tittle a .ltitle h3 {
+		padding: 0px;
+	    font-size: 4vw;
+    	line-height: normal;
+	}
+	.logo-loginTittle .logo-tittle a .ltitle h1 {
+		font-size: 6vw;
+		line-height: normal;
+	}
+	.logo-loginTittle .logo-tittle a .ltitle p {
+	    font-size: 2vw;
+    	line-height: normal;
+	}
+	.school-tittle q {
+		font-size: 3vw;
+    	line-height: normal;
+	}
+	.logo-loginTittle .logo-tittle { padding: 1vh 0; }
+	.middle-section .banner-slider { height: 50vh; }
+	.middle-section .banner-slider #slider-carousel .carousel-inner .item .carousel-caption h3 {
+	    font-size: 4vw;
+    	line-height: normal;
+	}
+	.middle-section .banner-slider #slider-carousel .carousel-inner .item .carousel-caption p {
+	    font-size: 2vw;
+    	line-height: normal;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.middle-section .banner-slider { height: 35vh; }
+	.middle-section .banner-slider #slider-carousel .carousel-inner .item .carousel-caption h3 {
+	    font-size: 6vw;
+		line-height: normal;
+	}
+	.middle-section .banner-slider #slider-carousel .carousel-inner .item .carousel-caption p {
+	    font-size: 4vw;
+		line-height: normal;
+	}
+}
+@media only screen and (max-width: 469px){
+	.corner-message .corner-carousel .item .item-content q { display: block; }	
+}
+@media only screen and (max-width: 361px){
+	.logo-loginTittle .logo-tittle a .logo-image { width: 13vw; }
+}
